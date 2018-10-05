@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function HelloPiper() {
+function MyThing() {
+    var username = 'Piper';
+
+
+
     return (
-        <div>Hello Piper!</div>
-    );
+       <div>
+           {username ? `Hello, ${username}` : 'Not logged in.'}
+       </div>
+    )
 }
 
-ReactDOM.render(<HelloPiper/>, document.querySelector('#root'));
+ReactDOM.render(<MyThing/>, document.querySelector('#root'));
